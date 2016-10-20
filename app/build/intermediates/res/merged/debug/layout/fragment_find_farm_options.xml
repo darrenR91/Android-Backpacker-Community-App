@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k00140908.darren.the88days.UserInputScreens.FindFarmOptionsFragment">
+
+
+    <Button
+        android:id="@+id/refine_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Refine"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <EditText
+        android:id="@+id/radius_farm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/prompt_radius"
+        android:imeActionId="@+id/login"
+        android:imeActionLabel="Refine"
+        android:imeOptions="actionUnspecified"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Find Farm Options"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal|top" />
+
+</FrameLayout>

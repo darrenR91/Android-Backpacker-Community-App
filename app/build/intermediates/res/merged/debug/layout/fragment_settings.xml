@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.k00140908.darren.the88days.UserInputScreens.SettingsFragment"
+    android:orientation="vertical"
+    android:layout_gravity="left|top">
+
+
+    <ProgressBar
+        android:id="@+id/settings_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/settings_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left|top">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Profile Private"
+        android:id="@+id/privacy_checkbox"
+        android:layout_gravity="center"
+        style="@android:style/TextAppearance.Large"/>
+
+    <Spinner
+        android:hint="Nationality"
+        android:id="@+id/nationality_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <Spinner
+        android:hint="WorkStatus"
+        android:id="@+id/workStatus_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/save_pref_button"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

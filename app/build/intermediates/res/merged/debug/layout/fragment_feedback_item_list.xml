@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.k00140908.darren.the88days.SearchViews.FeedbackItemFragment">
+
+<!-- Login progress -->
+<ProgressBar
+    android:id="@+id/backpacker_progress"
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:visibility="gone" />
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipeBackpackerList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</android.support.v4.widget.SwipeRefreshLayout>
+
+<!--&lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+<!--android:text="Backpacker List"-->
+<!--android:id="@+id/textView2"-->
+<!--android:layout_gravity="center" />-->
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInputScreens.FeedbackFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ProgressBar
+        android:id="@+id/feedback_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+
+    <LinearLayout
+        android:id="@+id/save_feedback_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/feedback_ratingBar"
+            android:layout_gravity="center_horizontal|top"
+            android:numStars="5"
+            android:stepSize="1.0"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/feedback_description"
+            android:layout_gravity="center" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Feedback"
+            android:id="@+id/save_feedback_button"
+            android:layout_gravity="center_horizontal|bottom" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

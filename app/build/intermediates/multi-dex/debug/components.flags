@@ -1,0 +1,74 @@
+-injars 'C:\Users\darre\Desktop\Layout Backup Working 7.1.16\The88Days\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\Users\darre\Desktop\Layout Backup Working 7.1.16\The88Days\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+
+-libraryjars 'C:\Users\darre\AppData\Local\Android\sdk\build-tools\23.0.2\lib\shrinkedAndroid.jar'
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontwarn
+-printconfiguration 'C:\Users\darre\Desktop\Layout Backup Working 7.1.16\The88Days\app\build\intermediates\multi-dex\debug\components.flags'
+
+
+-keep class com.k00140908.darren.the88days.MainActivity {
+    <init>();
+}
+
+-keep class com.k00140908.darren.the88days.LoginActivity {
+    <init>();
+}
+
+-keep class com.facebook.FacebookActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.gcm.GcmReceiver {
+    <init>();
+}
+
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.GCMListenerService {
+    <init>();
+}
+
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.IDListenerService {
+    <init>();
+}
+
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.RegistrationIntentService {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.AdActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver {
+    <init>();
+}
+
+-keep class com.google.android.gms.measurement.AppMeasurementService {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

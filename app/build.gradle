@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.k00140908.darren.the88days"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true //TO ALLOW LARGE BUILDS
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+//    compile files('libs/gson-2.2.4.jar')
+//    compile files('libs/retrofit-1.9.0.jar')
+    //compile 'com.squareup.picasso:picasso:2.3.2'
+
+    //compile 'com.google.maps.android:android-maps-utils:0.3.+'
+    //compile 'com.getbase:floatingactionbutton:1.10.1'
+    //compile 'com.android.support:appcompat-v7:23.1.1' Replace with older for error in adapters rcyclerviews
+    //compile 'com.android.support:support-v4:23.1.1' Replace with older for error in adapters rcyclerviews
+    //compile 'com.android.support:recyclerview-v7:23.1.1' Replace with older for error in adapters rcyclerviews
+    //changed from 8.4
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+}
+apply plugin: 'com.google.gms.google-services'

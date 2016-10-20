@@ -1,0 +1,19 @@
+-keep class com.k00140908.darren.the88days.MainActivity { <init>(); }
+-keep class com.k00140908.darren.the88days.LoginActivity { <init>(); }
+-keep class com.facebook.FacebookActivity { <init>(); }
+-keep class com.google.android.gms.gcm.GcmReceiver { <init>(); }
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.GCMListenerService { <init>(); }
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.IDListenerService { <init>(); }
+-keep class com.k00140908.darren.the88days.ManageFriends.ManageGCM.RegistrationIntentService { <init>(); }
+-keep class com.google.android.gms.ads.AdActivity { <init>(); }
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
+-keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementContentProvider { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

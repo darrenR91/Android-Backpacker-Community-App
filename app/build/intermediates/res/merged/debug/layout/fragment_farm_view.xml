@@ -1,0 +1,122 @@
+<!--<FrameLayout-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.k00140908.darren.the88days.SearchViews.FarmViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/hello_blank_fragment" />-->
+
+
+    <ProgressBar
+        android:id="@+id/feedback_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/farm_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left|top">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Howe Farming Co"
+                android:id="@+id/textViewName"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Address:"
+                        android:textStyle="bold|normal"
+                        android:id="@+id/textViewAddresslabel"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="1687 Chewko Rd, Walkamin QLD 4872, Australia"
+                        android:id="@+id/textViewAddress"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Working/Has worked from 88Days:"
+                        android:textStyle="bold|normal"
+                        android:id="@+id/textView5"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="55"
+                        android:id="@+id/textViewWorkers"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Feedback"
+                android:textStyle="bold|normal"
+                android:id="@+id/textViewFeedbacklabel"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="No Feedback available for this farm"
+                android:visibility="gone"
+                android:id="@+id/textViewEmptyList"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
+
+        </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/farm_view_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_edit"
+        app:layout_anchor="@+id/listFeedback"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="com.k00140908.darren.the88days.Animations.FABBehavior"/>
+
+    <ImageView
+            android:id="@+id/farm_icon"
+            android:src="@drawable/barn_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+        android:layout_gravity="left|top" />
+
+</android.support.design.widget.CoordinatorLayout>
+    <!--</FrameLayout>-->

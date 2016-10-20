@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+        <item
+            android:id="@+id/find_farms"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Find Farms" />
+        <item
+            android:id="@+id/find_backpackers"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Find Backpackers" />
+
+        <item
+            android:id="@+id/find_cars"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Find Cars" />
+
+
+        <item
+            android:id="@+id/friends"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Friends" />
+
+        <item
+            android:id="@+id/manage_car"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Manage My Car Advert" />
+        <item
+            android:id="@+id/add_farms"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Add Farms" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/preferences"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Preferences" />-->
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>

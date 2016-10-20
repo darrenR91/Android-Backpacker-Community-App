@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_item_layout"
+    android:paddingBottom="@dimen/size_byte"
+    android:paddingLeft="@dimen/size_word"
+    android:paddingRight="@dimen/size_word"
+    android:paddingTop="@dimen/size_byte">
+
+
+    <ImageView
+        android:id="@+id/backpackerThumbnail"
+        android:layout_width="@dimen/movie_thumbnail_width"
+        android:layout_height="@dimen/movie_thumbnail_height"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/backpackerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/backpackerThumbnail"
+        android:layout_marginLeft="56dp"
+        android:alpha="0.87"
+        android:gravity="left"
+        android:padding="@dimen/size_half_byte"
+        android:textSize="@dimen/size_text_primary" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/backpackerNewMessage"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/backpackerName"-->
+        <!--android:layout_toRightOf="@+id/backpackerThumbnail"-->
+        <!--android:alpha="0.87"-->
+        <!--android:padding="@dimen/size_half_byte"-->
+        <!--android:textSize="@dimen/size_text_secondary" />-->
+
+    <TextView
+        android:id="@+id/backpackerLastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:alpha="0.87"
+        android:padding="@dimen/size_half_byte"
+        android:textSize="@dimen/size_text_secondary" />
+
+    <TextView
+        android:id="@+id/backpackerNewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/backpackerLastMessage"
+        android:alpha="0.87"
+        android:padding="@dimen/size_half_byte"
+        android:textSize="@dimen/size_text_secondary" />
+
+
+</RelativeLayout>

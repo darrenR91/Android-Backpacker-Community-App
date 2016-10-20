@@ -1,0 +1,44 @@
+<!--<FrameLayout-->
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k00140908.darren.the88days.ListFragments.FindCarsListFragment">
+
+
+    <ProgressBar
+        android:id="@+id/cars_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeCarsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listCars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/car_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_anchor="@+id/listCars"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@android:drawable/ic_menu_add"
+        android:visibility="gone"
+        app:layout_behavior="com.k00140908.darren.the88days.Animations.FABBehavior"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+    <!--</FrameLayout>-->

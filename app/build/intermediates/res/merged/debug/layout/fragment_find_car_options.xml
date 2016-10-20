@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.k00140908.darren.the88days.UserInputScreens.FindCarOptionsFragment">
+
+    <ScrollView
+        android:id="@+id/new_car_form_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/new_car_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Find Cars Options"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal|top" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/radius_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Radius"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Please Select a Location."
+            android:id="@+id/textView8" />
+
+        <Spinner
+            android:hint="Location"
+            android:id="@+id/car_advert_location_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/car_price_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price From"
+                android:inputType="number"
+                android:maxLines="1"
+                android:imeActionId="@+id/save_feedback_button"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/car_price_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Price To"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:imeActionId="@+id/save_feedback_button"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/date_textviewfrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/date_button_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select From Calendar"/>
+
+        <TextView
+            android:id="@+id/date_textviewto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/date_button_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select From Calendar"/>
+
+        <Button
+            android:id="@+id/refine_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Refine"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|bottom" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
